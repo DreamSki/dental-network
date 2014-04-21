@@ -9,8 +9,11 @@ html
     == javascript_include_tag 'application', 'data-turbolinks-track' => true
     == csrf_meta_tags
   body
-    header
-      == render 'layouts/navigation'
-    main[role="main"]
-      == render 'layouts/messages'
-      == yield
+    .container
+      header
+        .logo.center
+          = image_tag "/assets/logo.png"
+      main[role="main"]
+        = yield
+      footer
+        = render "layouts/footer"

@@ -5,50 +5,123 @@
 //= depend_on_asset "bootstrap/glyphicons-halflings-regular.woff"
 
 // import the CSS framework
+$container-lg: 1024px;
+
 @import "bootstrap";
 
 // make all images responsive by default
 img {
   @extend .img-responsive;
   margin: 0 auto;
-  }
+}
+
 // override for the 'Home' navigation link
 .navbar-brand {
   font-size: inherit;
-  }
+}
 
-// THESE ARE EXAMPLES YOU CAN MODIFY
-// create your own classes
-// to make views framework-neutral
 .column {
   @extend .col-md-6;
   @extend .text-center;
-  }
+}
 .form {
   @extend .col-md-6;
-  }
+}
 .form-centered {
   @extend .col-md-6;
   @extend .text-center;
-  }
+}
 .submit {
   @extend .btn;
   @extend .btn-primary;
   @extend .btn-lg;
-  }
+}
+
 // apply styles to HTML elements
 // to make views framework-neutral
-main {
-  @extend .container;
-  background-color: #eee;
-  padding-bottom: 80px;
-  width: 100%;
-  margin-top: 51px; // accommodate the navbar
+
+body {
+  background-color: #ccc;
+}
+header {
+  background: white url("/assets/header_bg.png");
+  background-repeat: repeat-x;
+  height: 203px;
+
+  .logo {
+    padding-top: 30px;
   }
+}
+
+.center {
+  float: none;
+  margin: 0 auto;
+}
+
+footer {
+  background: white url("/assets/footer_bg.png");
+  height: 253px;
+
+  padding-top: 40px;
+  #links {
+    padding: 20px;
+
+    .link { 
+      @extend .center;
+      display: table;
+
+      height: 90px;
+      a {
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+
+        color: #939598;
+        font-size: 16px;
+        cursor: pointer;
+
+        p {
+          margin-top: 5px;
+          margin-bottom: 5px;
+        }
+
+        &:hover {
+          color: #939598;
+          text-decoration: none;
+        }
+      }
+    }
+
+    .col-xs-4.active, .col-xs-4:hover {
+      background-color: #6ac04b;
+      
+      a {
+        color: white;
+      }
+    }
+  }
+
+  ul#socials {
+    img {
+      opacity: 0.8;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+main {
+  padding: 15px 15px 80px 15px;
+  background-color: white;
+  min-height: 400px;
+}
+
 section {
   @extend .row;
   margin-top: 20px;
-  }
+}
 
 // Styles for Devise views
 // using Bootstrap
