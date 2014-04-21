@@ -43,6 +43,7 @@ img {
 body {
   background-color: #ccc;
 }
+
 header {
   background: white url("/assets/header_bg.png");
   background-repeat: repeat-x;
@@ -73,26 +74,27 @@ footer {
       height: 90px;
       a {
         display: table-cell;
-        text-align: center;
         vertical-align: middle;
+        text-align: center;
 
         color: #939598;
         font-size: 16px;
         cursor: pointer;
 
-        p {
+        span {
+          display: block;
           margin-top: 5px;
           margin-bottom: 5px;
         }
 
         &:hover {
-          color: #939598;
+          color: white;
           text-decoration: none;
         }
       }
     }
 
-    .col-xs-4.active, .col-xs-4:hover {
+    .col-sm-4.active, .col-sm-4:hover {
       background-color: #6ac04b;
       
       a {
@@ -112,12 +114,67 @@ footer {
   }
 }
 
-main {
-  padding: 15px 15px 80px 15px;
-  background-color: white;
-  min-height: 400px;
+@media (max-width: $screen-md-max) {
+  header {
+    height: 203px;
+  }
+
+  footer a {
+    font-size: 16px;
+  }
 }
 
+@media (max-width: $screen-sm-max) {
+  header {
+    height: 160px;
+  }
+
+  footer a {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: $screen-xs-max) {
+  header {
+    height: 120px;
+
+    img {
+      width: 70%;
+    }
+  }
+
+  footer {
+    .link {
+      height: 30px !important;
+
+      a {
+        font-size: 14px !important;
+
+        span {
+          display: inline-block !important;
+        }
+      }
+    }
+
+    #socials {
+      float: right;
+    }
+  }
+
+  .nav-tabs li {
+    margin: 1px 0;
+    width: 100% !important;
+    a {
+      font-size: 14px !important;
+    }
+  }
+
+}
+
+main {
+  @extend .clearfix;
+  background-color: white;
+}
 section {
   @extend .row;
   margin-top: 20px;

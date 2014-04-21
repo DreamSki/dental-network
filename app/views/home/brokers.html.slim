@@ -1,0 +1,21 @@
+#brokers
+  .col-sm-6
+    = image_tag "/assets/broker_title.png"
+    ul.nav.nav-tabs
+      li.active
+        a data-toggle="tab" href="#tab1"  WHY DELTA DENTAL
+      li
+        a data-toggle="tab" href="#tab2"  WHY STAND ALONE DENTAL
+      li
+        a data-toggle="tab" href="#tab3"  HEALTH CARE REFORM
+
+    /! Tab panes
+    .tab-content
+      #tab1.tab-pane.fade.in.active
+        = render "home/brokers/why_delta_dental"
+      #tab2.tab-pane.fade
+        = render "home/brokers/why_stand_alone_dental"
+      #tab3.tab-pane.fade
+        = render "home/brokers/health_care_reform"
+  .col-sm-6
+    .video

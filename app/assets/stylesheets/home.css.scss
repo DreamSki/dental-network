@@ -1,0 +1,72 @@
+#intro {
+  height:100%;
+  
+  embed {
+    display:block;
+    width: 100%;
+  }
+}
+
+#brokers {
+  margin: 20px 40px;
+
+  h4 {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 16px;
+    color: #6d6e71;
+    padding-left: 20px;
+  }
+
+  .video {
+    width: 100%;
+    height: 250px;
+    background: #777;
+  }
+
+  .nav-tabs {
+    border: none;
+    margin-bottom: 30px;
+    li {
+      margin-top: 1px;
+      width: 33%;
+      a {
+        padding: 7px;
+        line-height: 18px;
+        border: none;
+        color: #939598;
+        font-size: 16px;
+        background: none;
+        text-align: center;
+      }
+
+      &:hover, &.active {
+        background: #6ac04b;
+
+        a {
+          color: white;
+        }
+      }
+    }
+  }
+
+  #tab2 {
+    ul {
+      -webkit-padding-start: 20px;
+    }
+    a {
+      color: #6bc048;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  } 
+  #tab3 h4 {
+    font-size: 20px;
+  }
+}
+
+underline {
+  text-decoration: underline;
+}
