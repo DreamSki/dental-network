@@ -12,4 +12,8 @@ module ApplicationHelper
     html.html_safe
   end
 
+  def active_home_menu(menu)
+    "active" if params[:action] == menu
+  end
+
 end

@@ -1,19 +1,19 @@
 .clearfix
   .col-sm-7
     #links.clearfix
-      .col-sm-4
+      .col-sm-4 class=("#{active_home_menu('individuals')}")
         .link
           a href="/individuals"
             span INDIVIDUALS
             span &
             span FAMILIES
 
-      .col-sm-4
+      .col-sm-4 class=("#{active_home_menu('administrators')}")
         .link
           a href="/administrators"
             span GROUP
             span ADMINISTRATORS
-      .col-sm-4
+      .col-sm-4 class=("#{active_home_menu('brokers')}")
         .link
           a href="/brokers"
             span BROKERS
