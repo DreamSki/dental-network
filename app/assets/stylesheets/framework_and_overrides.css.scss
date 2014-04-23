@@ -45,7 +45,7 @@ body {
 }
 
 header {
-  background: transparent url("/assets/header_bg.png");
+  background: transparent url("/assets/header_bg.png") bottom;
   background-repeat: repeat-x;
   height: 203px;
   z-index: 101;
@@ -140,6 +140,10 @@ footer {
   footer a {
     font-size: 14px;
   }
+
+  main {
+    margin-top: -16px;
+  }
 }
 
 @media (max-width: $screen-xs-max) {
@@ -152,6 +156,7 @@ footer {
   }
 
   footer {
+    margin-top: -20px;
     .link {
       height: 30px !important;
 
@@ -167,6 +172,10 @@ footer {
     #socials {
       float: right;
     }
+  }
+
+  main {
+    margin-top: -13px;
   }
 
   .nav-tabs li {
