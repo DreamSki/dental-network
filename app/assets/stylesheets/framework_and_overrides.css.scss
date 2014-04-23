@@ -45,9 +45,11 @@ body {
 }
 
 header {
-  background: white url("/assets/header_bg.png");
+  background: transparent url("/assets/header_bg.png");
   background-repeat: repeat-x;
   height: 203px;
+  z-index: 101;
+  position: relative;
 
   .logo {
     width: 290px;
@@ -61,9 +63,12 @@ header {
 }
 
 footer {
-  background: white url("/assets/footer_bg.png");
+  background: transparent url("/assets/footer_bg.png");
   height: 253px;
+  z-index: 101;
+  position: relative;
 
+  margin-top: -36px;
   padding-top: 40px;
   #links {
     padding: 20px;
@@ -172,7 +177,7 @@ footer {
     }
   }
 
-  #brokers {
+  #sub-content {
     margin: 20px 10px !important;
     .subtitle {
       font-size: 16px;
@@ -183,6 +188,9 @@ footer {
 
 main {
   @extend .clearfix;
+  z-index: 100;
+  margin-top: -20px;
+  position: relative;
   background-color: white;
 }
 section {

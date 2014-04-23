@@ -7,8 +7,9 @@
   }
 }
 
-#brokers {
-  margin: 20px 40px;
+#sub-content {
+  margin: 40px 40px;
+  padding-bottom: 40px;
 
   h4 {
     font-size: 16px;
@@ -68,8 +69,9 @@ a.green {
   cursor: pointer;
 }
 
-underline {
+.underline {
   text-decoration: underline;
+  color: #6d6e71;
 }
 
 p.small {
