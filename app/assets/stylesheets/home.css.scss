@@ -56,17 +56,32 @@
     ul {
       -webkit-padding-start: 20px;
     }
-    a {
-      color: #6bc048;
-      text-decoration: underline;
-      cursor: pointer;
-    }
   } 
   #tab3 h4 {
     font-size: 20px;
   }
 }
 
+a.green {
+  color: #6bc048;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 underline {
   text-decoration: underline;
+}
+
+p.small {
+  color: #6d6e71;
+  font-size: 10px !important;
+  line-height: 12px;
+  margin-bottom: 3px;
+}
+
+h3.subtitle {
+  margin-top: 0px;
+  margin-bottom: 7px;
+  text-align: center;
+  color: #6d6e71;
 }

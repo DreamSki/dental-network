@@ -1,5 +1,22 @@
 #brokers
   .col-sm-6
-    = image_tag "/assets/broker_title.png"
-    | administrator
+    = image_tag "/assets/admin_title.png"
+    h3.subtitle Choose The Dental Experts
+    ul.nav.nav-tabs
+      li.active
+        a data-toggle="tab" href="#tab1"  WHY DELTA DENTAL
+      li
+        a data-toggle="tab" href="#tab2"  WHY STAND ALONE DENTAL
+      li
+        a data-toggle="tab" href="#tab3"  HEALTH CARE REFORM
+
+    /! Tab panes
+    .tab-content
+      #tab1.tab-pane.fade.in.active
+        = render "home/administrators/why_delta_dental"
+      #tab2.tab-pane.fade
+        = render "home/administrators/why_stand_alone_dental"
+      #tab3.tab-pane.fade
+        = render "home/administrators/health_care_reform"
   .col-sm-6
+    .video
