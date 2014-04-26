@@ -1,17 +1,10 @@
 <div id="intro">
-  <video width="100%" autoplay="autoplay" id="video">
-    <source src="/assets/intro.mp4" type="video/mp4">
-    <source src="/assets/intro.ogv" type="video/ogg">
-    Your browser doesn't support the <code>video</code> element
-  </video>
+  <object type="application/x-shockwave-flash" data="/assets/intro.swf" id="main_banner" style="visibility: visible;"> 
+    <param name="wmode" value="transparent">
+  </object>
 </div>
-
-<script type="text/javascript">
-  var myVideo = document.getElementById('video');
-  myVideo.on('ended', function () {
-    this.currentTime = 0;
-    this.play();
-  }, false);
-
-  myVideo.play();
+<script>
+  var width = $("#intro").width();
+  $("#intro object").css("width", width + "px");
+  $("#intro object").css("height", width * 0.40 + "px");
 </script>
