@@ -1,10 +1,24 @@
 <div id="intro">
   <object type="application/x-shockwave-flash" data="/assets/intro.swf" id="main_banner" style="visibility: visible;"> 
     <param name="wmode" value="transparent">
+    <param name="loop" value="false">
   </object>
+  <div id="video">
+    <%= render "home/embed", embed_id: "2chuuczmdx" %>
+  </div>
 </div>
 <script>
+  $(window).resize( function() {
+    var width = $("#intro").width();
+    $("#intro object").css("width", width + "px");
+    $("#intro object").css("height", width * 0.40 + "px");
+  });
+
   var width = $("#intro").width();
   $("#intro object").css("width", width + "px");
   $("#intro object").css("height", width * 0.40 + "px");
+  setTimeout(function() {
+    $("#video").fadeIn('slow');
+  }, 20000);
+
 </script>

@@ -122,6 +122,18 @@ footer {
   }
 }
 
+
+#intro {
+  position: relative;
+  #video {
+    width: 45%;
+    height: auto;
+    position: absolute;
+    left: 52%;
+    top: 40px;
+    display: none;
+  }
+}
 @media (max-width: $screen-md-max) {
   header {
     height: 203px;
@@ -193,6 +205,16 @@ footer {
     }
   }
 
+  #intro {
+    min-height: 230px;
+    #video {
+      width: 100%;
+      height: auto;
+      left: 0;
+      top:0;
+      display: block !important
+    }
+  }
 }
 
 main {
