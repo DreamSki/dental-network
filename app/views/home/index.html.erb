@@ -1,24 +1,22 @@
 <div id="intro">
-  <object type="application/x-shockwave-flash" data="/assets/intro.swf" id="main_banner" style="visibility: visible;"> 
-    <param name="wmode" value="transparent">
-    <param name="loop" value="false">
-  </object>
-  <div id="video">
-    <%= render "home/embed", embed_id: "2chuuczmdx" %>
-  </div>
-</div>
+  <div id="wistia_jgpp8ufjb9" class="wistia_embed" style="width:1024px;height:404px;">&nbsp;</div>
+<script charset="ISO-8859-1" src="//fast.wistia.com/assets/external/E-v1.js"></script>
 <script>
-  $(window).resize( function() {
-    var width = $("#intro").width();
-    $("#intro object").css("width", width + "px");
-    $("#intro object").css("height", width * 0.40 + "px");
+  wistiaEmbed = Wistia.embed("jgpp8ufjb9", {
+    videoFoam: true,
+    autoPlay: true,
+    controlsVisibleOnLoad: false,
+    volumeControl: false,
+    playbar: false,
+    fullscreenButton: false,
+    smallPlayButton: false
   });
 
-  var width = $("#intro").width();
-  $("#intro object").css("width", width + "px");
-  $("#intro object").css("height", width * 0.40 + "px");
-  setTimeout(function() {
-    $("#video").fadeIn('slow');
-  }, 20000);
-
+  wistiaEmbed.bind("secondchange", function (s) {
+    if(s > 60) {
+      wistiaEmbed.time(0);
+      wistiaEmbed.play();
+    }
+  });
 </script>
+</div>
