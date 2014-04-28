@@ -64,6 +64,10 @@ a.green {
 .underline {
   text-decoration: underline;
   color: #6d6e71;
+
+  &:hover {
+    color: #6bc048;
+  }
 }
 
 p.small {

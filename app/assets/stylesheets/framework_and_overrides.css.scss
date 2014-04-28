@@ -146,6 +146,14 @@ footer {
       }
     }
   }
+
+  .nav-tabs li {
+    margin: 1px 0;
+    width: 100% !important;
+    a {
+      font-size: 14px !important;
+    }
+  }
 }
 
 @media (max-width: $screen-sm-max) {
@@ -167,6 +175,10 @@ footer {
 
   main {
     margin-top: -16px;
+  }
+
+  #welcome-video {
+    padding: 20px 0 !important;
   }
 }
 
@@ -202,20 +214,13 @@ footer {
     margin-top: -13px;
   }
 
-  .nav-tabs li {
-    margin: 1px 0;
-    width: 100% !important;
-    a {
-      font-size: 14px !important;
-    }
-  }
-
   #sub-content {
     margin: 20px 10px !important;
     .subtitle {
       font-size: 16px;
     }
   }
+
 }
 
 main {
