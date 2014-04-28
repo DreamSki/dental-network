@@ -1,1 +1,9 @@
-<iframe src="//fast.wistia.net/embed/iframe/<%= embed_id%>?videoFoam=true" allowtransparency="true" frameborder="0" scrolling="no" autoplay="true" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen ></iframe><script src="//fast.wistia.net/assets/external/iframe-api-v1.js"></script>
+<% autoplay = false if autoplay.nil? %>
+<div id="wistia_<%= embed_id %>" class="wistia_embed" style="width:640px;height:360px;"></div>
+<script charset="ISO-8859-1" src="//fast.wistia.com/assets/external/E-v1.js"></script>
+<script>
+  wistiaEmbed = Wistia.embed("<%= embed_id %>", {
+    videoFoam: true,
+    autoPlay: <%= autoplay %>
+  });
+</script>
