@@ -139,8 +139,12 @@ footer {
     height: 203px;
   }
 
-  footer a {
-    font-size: 16px;
+  footer {
+    .link {
+      a {
+        font-size: 14px !important;
+      }
+    }
   }
 }
 
@@ -149,8 +153,16 @@ footer {
     height: 160px;
   }
 
-  footer a {
-    font-size: 14px;
+  footer {
+    .link {
+      a {
+        font-size: 14px !important;
+
+        span {
+          display: inline-block !important;
+        }
+      }
+    }
   }
 
   main {
