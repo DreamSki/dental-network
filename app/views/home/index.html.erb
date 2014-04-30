@@ -1,8 +1,15 @@
 <div id="intro">
-  <div id="wistia_jgpp8ufjb9" class="wistia_embed" style="width:640px;height:252px;">&nbsp;</div>
+  <div class="visible-lg">
+    <object type="application/x-shockwave-flash" data="/assets/intro.swf" id="main_banner" style="visibility: visible;"> 
+      <param name="wmode" value="transparent">
+    </object>
+  </div>
+  <div class="hidden-lg">
+    <div id="wistia_fmomb47ah7" class="wistia_embed" style="width:640px;height:252px;"></div>
+  </div>
 <script charset="ISO-8859-1" src="//fast.wistia.com/assets/external/E-v1.js"></script>
 <script>
-  wistiaEmbed = Wistia.embed("jgpp8ufjb9", {
+  wistiaEmbed = Wistia.embed("fmomb47ah7", {
     videoFoam: true,
     autoPlay: true,
     controlsVisibleOnLoad: false,
@@ -18,5 +25,10 @@
       wistiaEmbed.play();
     }
   });
+</script>
+<script>
+  var width = $("#intro").width();
+  $("#intro object").css("width", width + "px");
+  $("#intro object").css("height", width * 0.40 + "px");
 </script>
 </div>
