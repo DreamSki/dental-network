@@ -6,4 +6,5 @@ Ttt::Application.routes.draw do
   get "/individuals" => "home#individuals"
   get "/administrators" => "home#administrators"
   get "/brokers" => "home#brokers"
+  get "/intro" => "home#intro"
 end

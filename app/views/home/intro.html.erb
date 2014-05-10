@@ -1,0 +1,27 @@
+<div id="intro">
+  <div class="visible-lg">
+    <video width="100%" autoplay="autoplay" id="video">
+      <source src="/assets/intro_simple.mp4" type="video/mp4">
+      Your browser doesn't support the <code>video</code> element
+    </video>
+  </div>
+  <div class="hidden-lg">
+    <div id="wistia_fmomb47ah7" class="wistia_embed" style="width:640px;height:252px;"></div>
+  </div>
+<script charset="ISO-8859-1" src="//fast.wistia.com/assets/external/E-v1.js"></script>
+<script>
+  wistiaIntro = Wistia.embed("fmomb47ah7", {
+    videoFoam: true,
+    controlsVisibleOnLoad: false,
+    volumeControl: false,
+    playbar: false,
+    fullscreenButton: false,
+    smallPlayButton: false
+  });
+</script>
+<script>
+  var width = $("#intro").width();
+  $("#intro video").css("width", width + "px");
+  $("#intro video").css("height", width * 0.40 + "px");
+</script>
+</div>
